@@ -117,6 +117,7 @@ string sub(string p, string q) {
 string mul(string p, string q) {
 	int flag = 0;
 	string result;
+	if (p=="0"||q=="0")return "0";
 	if (p[0] == '-') {
 		++flag;
 		p.erase(0, 1);
